@@ -1,7 +1,10 @@
 class CreateReviews < ActiveRecord::Migration
   def change
     create_table :reviews do |t|
-
+      t.integer :album_id
+      t.integer :user_id
+      t.float :rating
+      t.text :content
       t.timestamps null: false
     end
   end
