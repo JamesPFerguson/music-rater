@@ -1,0 +1,2 @@
+class AlbumReviewsController < ApplicationController
+end
