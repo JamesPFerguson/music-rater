@@ -30,6 +30,7 @@ review3 = Review.create(album_id: hmc.id, user_id: tom.id, rating: 3,
 review4 = Review.create(album_id: hb.id, user_id: tom.id, rating: 5,
     content: "This album was great.")
 
+#This table may be completely unnecessary. We'll see.
 AlbumReview.create(album_id: review1.album_id, review_id: review1.id)
 AlbumReview.create(album_id: review2.album_id, review_id: review2.id)
 AlbumReview.create(album_id: review3.album_id, review_id: review3.id)
