@@ -1,6 +1,6 @@
 class ArtistsController < ApplicationController
   
-  def get
+  def show
     
   end
   
@@ -13,6 +13,10 @@ class ArtistsController < ApplicationController
   end
   
   def destroy
+    
+  end
+  
+  def index
     
   end
   
