@@ -17,7 +17,7 @@ class ReviewsController < ApplicationController
   end
   
   def index
-    
+    #
   end
   
 end
