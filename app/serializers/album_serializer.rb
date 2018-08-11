@@ -1,3 +1,3 @@
 class AlbumSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :artist_id, :title, :art_url
 end
