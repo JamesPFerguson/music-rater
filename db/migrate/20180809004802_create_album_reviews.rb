@@ -1,4 +1,4 @@
-class CreateAlbumReviews < ActiveRecord::Migration
+class CreateAlbumReviews < ActiveRecord::Migration[4.2]
   def change
     create_table :album_reviews do |t|
       t.integer :album_id

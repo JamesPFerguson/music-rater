@@ -7,6 +7,7 @@ ruby '2.4.2'
 gem 'rails', '~> 5.2.1'
 gem 'active_model_serializers'
 gem 'bcrypt'
+gem 'rack-cors', :require => 'rack/cors'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server

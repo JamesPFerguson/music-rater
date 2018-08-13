@@ -21,5 +21,14 @@ module App
     # config.i18n.default_locale = :de
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
+
+    config.middleware.insert_before 0, Rack::Cors do
+      
+      allow do
+        origins '*'
+        resource '*', :headers => :any, :methods => [:get, :post, :options]
+      end
+
+    end
   end
 end
