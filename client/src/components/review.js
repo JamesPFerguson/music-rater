@@ -1,17 +1,23 @@
 import React from 'react';
 
-const Review = ({
-  album,
-  user,
+export default const Review = ({
+  review_id,
+  user_id,
   rating,
-  content
+  content,
+  album
 }) => {
     return (
       <div className="review">
-      <div className="review-album-title">{album.title} -- {rating}/5 </div>
+      <div className="review-album-title">
+
+      <Link to={`/albums/${album.id}`}>{album.title}</Link>
+       by: <Link to={`/artists/${album.artist_id}`} -- {rating}/5 </div>
+      <br>
+      <br>
       <img src={album.art_url}/>
       <div className="review-user">
-      Reviewed by: <Link to={`/users/${user.id}`}>{user.username}</Link>
+      Reviewed by: <Link to={`/users/${user_id}`}>{user.username}</Link>
       </div>
       <div className="review-text">{content}</div>
       </div>
