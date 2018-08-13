@@ -1,14 +1,15 @@
 import React from 'react';
-import { Router, Route, Link} from 'react-router';
+import {Link} from 'react-router-dom';
 export const Review = (
   review_id,
-  user_id,
   rating,
   content,
   album,
-  artist
+  artist,
+  user
 ) => {
     return (
+      {debugger}
       <div className="review">
       <div className="review-album-title">
 
@@ -17,9 +18,9 @@ export const Review = (
        </div>
       <br/>
       <br/>
-      <img src={album.art_url}/>
+      <img src={album.art_url} alt="album art"/>
       <div className="review-user">
-      Reviewed by: <Link to={`/users/${user_id}`}>{user.username}</Link>
+      Reviewed by: <Link to={`/users/${user.id}`}>{user.username}</Link>
       </div>
       <div className="review-text">{content}</div>
       </div>

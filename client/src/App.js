@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Artist from './components/artists';
-import {Review} from './components/review';
+// import {Review} from './components/review';
 import ReviewContainer from './containers/reviewContainer';
-import { Router, Route, Link} from 'react-router';
+// import { Router, Route, Link, NavLink} from 'react-router-dom';
 
 class App extends Component {
   render() {

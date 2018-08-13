@@ -1,6 +1,6 @@
 import React from 'react';
 import {Review} from '../components/review'
-import { Router, Route, Link} from 'react-router';
+// import { Router, Route, Link} from 'react-router';
 export default class ReviewContainer extends React.Component {
 
 constructor() {
