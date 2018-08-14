@@ -26,6 +26,20 @@
   font-size: large;
 }
 
+img.review-album-art {
+    height: 300px;
+    width: 300px;
+    float: left;
+}
+
+.review {
+  margin: 10%;
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

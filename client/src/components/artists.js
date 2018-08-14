@@ -15,7 +15,7 @@ export default class Artist extends React.Component {
 
     render() {
         return (
-        <div> Hi </div>
+        <div> </div>
         )
     }
 
