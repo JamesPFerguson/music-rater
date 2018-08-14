@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2018_08_09_060313) do
 
   create_table "albums", force: :cascade do |t|
     t.integer "artist_id"
+    t.string "artist_name"
     t.string "title"
     t.string "art_url"
     t.datetime "created_at", null: false

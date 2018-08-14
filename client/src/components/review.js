@@ -9,7 +9,7 @@ export const Review = (
   user
 ) => {
     return (
-      {debugger}
+      
       <div className="review">
       <div className="review-album-title">
 

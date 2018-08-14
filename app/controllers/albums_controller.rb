@@ -13,7 +13,8 @@ class AlbumsController < ApplicationController
   end
 
   def show
-
+    @album = Album.find(params[:id])
+    render json: @album
   end
 
   def index

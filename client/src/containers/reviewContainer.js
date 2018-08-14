@@ -5,13 +5,13 @@ export default class ReviewContainer extends React.Component {
 
 constructor() {
     super();
-
     this.state = {
         review: {}
     }
 }
 
 componentWillMount() {
+    debugger
     fetch('http://localhost:3000/reviews/1')
     .then(res => res.json())
     .then(response =>  this.setState({review: response}));

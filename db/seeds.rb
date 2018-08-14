@@ -13,12 +13,12 @@ plini = Artist.create(name: "Plini")
 ff = Artist.create(name: "Fleet Foxes")
 
 hmc = Album.create(title: "Handmade Cities", art_url:"https://f4.bcbits.com/img/a2040672325_10.jpg",
-  artist_id: plini.id)
+  artist_id: plini.id, artist_name: plini.name)
 ot = Album.create(title: "Other Things", art_url:"https://f4.bcbits.com/img/a0873143341_10.jpg",
-    artist_id: plini.id)
+    artist_id: plini.id, artist_name: plini.name)
 hb = Album.create(title: "Helplessness Blues",
   art_url:"https://images-na.ssl-images-amazon.com/images/I/81z4V17odOL._SL1220_.jpg",
-  artist_id: ff.id)
+  artist_id: ff.id, artist_name: ff.name)
 
 review1 = Review.create(album_id: hmc.id, user_id: bob.id, rating: 4,
   content: "This album was great.")
