@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import Artist from './components/artists';
 // import {Review} from './components/review';
 import ReviewContainer from './containers/reviewContainer';
 // import { Router, Route, Link, NavLink} from 'react-router-dom';
@@ -11,9 +10,8 @@ class App extends Component {
     return (
       <div className="App">
       <br/><br/>
-        <Artist/>
-        <ReviewContainer/>
-        <ReviewForm/>
+      <ReviewForm/>
+      <ReviewContainer/>
       </div>
     );
   }

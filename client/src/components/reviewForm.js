@@ -14,6 +14,9 @@ export default class ReviewForm extends React.Component {
             art_url: '',
             submitted: false
         }
+
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleChange = (e) => {
@@ -21,7 +24,7 @@ export default class ReviewForm extends React.Component {
         this.setState({ [name]: value });
     }
 
-    handleSubmit(e) {
+    handleSubmit = (e) => {
         e.preventDefault();
 
         // this.setState({ submitted: true });
@@ -33,7 +36,7 @@ export default class ReviewForm extends React.Component {
     }
 
     render() {
-        const {username, album, artist, rating, content} = this.state;
+        const {username, album, artist_name, rating, content} = this.state;
         return (
             <div className="review-form">
             <h3> Add a review </h3>
@@ -47,14 +50,14 @@ export default class ReviewForm extends React.Component {
             <input type="text" name="album" value={album} onChange={this.handleChange} />
             <br/><br/>
             <label>Artist: </label>
-            <input type="text" name="artist" value={artist} onChange={this.handleChange} />
+            <input type="text" name="artist_name" value={artist_name} onChange={this.handleChange} />
             <br/><br/>
             <label>Rating: </label>
             <input type="text" name="rating" value={rating} onChange={this.handleChange} />
             <br/><br/>
             <label>Review: </label>
             <br/>
-            <textarea rows="4" cols="50" name="content" value={content} onChange={this.handleChange} />
+            <textarea rows="8" cols="80" name="content" value={content} onChange={this.handleChange} />
             <br/><br/>
             <input type="submit"/>
 

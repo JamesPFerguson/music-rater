@@ -29,11 +29,16 @@
 img.review-album-art {
     height: 300px;
     width: 300px;
-    float: left;
+    /* float: left; */
 }
 
 .review {
   margin: 10%;
+}
+
+textarea {
+  max-width:30%;
+  max-height:250px;
 }
 
 img {
