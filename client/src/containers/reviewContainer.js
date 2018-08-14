@@ -1,5 +1,5 @@
 import React from 'react';
-import {Review} from '../components/review'
+import Review from '../components/review'
 // import { Router, Route, Link} from 'react-router';
 export default class ReviewContainer extends React.Component {
 
@@ -32,8 +32,7 @@ componentWillMount() {
 render() {
     return (
         <div>
-        {this.state.content}
-        {this.state.album.title}
+        <Review review_id={this.state.review_id} rating={this.state.rating} content={this.state.content} album={this.state.album} user={this.state.user} />
         </div>
     )
 }

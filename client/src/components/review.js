@@ -1,28 +1,28 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-export const Review = (
-  review_id,
-  rating,
-  content,
-  album,
-  user
-) => {
+export default class Review extends React.Component {
+
+  componentWillMount() {
+    debugger
+  }
+
+  render() {
     return (
       
       <div className="review">
       <div className="review-album-title">
 
-      <Link to={`/albums/${album.id}`}>{album.title}</Link>
-       by: <Link to={`/artists/${album.artist_id}`}>{album.artist_name}</Link> -- {rating}/5 
+      <a href={`/albums/${this.props.album.id}`}>{this.props.album.title}</a>
+       by: <a href={`/artists/${this.props.album.artist_id}`}>{this.props.album.artist_name}</a> -- {this.props.rating}/5 
        </div>
       <br/>
       <br/>
-      <img src={album.art_url} alt="album art"/>
+      <img src={this.props.album.art_url} alt="album art"/>
       <div className="review-user">
-      Reviewed by: <Link to={`/users/${user.id}`}>{user.username}</Link>
+      Reviewed by: <a href={`/users/${this.props.user.id}`}>{this.props.user.username}</a>
       </div>
-      <div className="review-text">{content}</div>
+      <div className="review-text">{this.props.content}</div>
       </div>
     )
+  }
 
 }
