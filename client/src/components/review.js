@@ -5,7 +5,6 @@ export const Review = (
   rating,
   content,
   album,
-  artist,
   user
 ) => {
     return (
@@ -14,7 +13,7 @@ export const Review = (
       <div className="review-album-title">
 
       <Link to={`/albums/${album.id}`}>{album.title}</Link>
-       {/* by: <Link to={`/artists/${artist.id}`}{artist.name}</Link> -- {rating}/5  */}
+       by: <Link to={`/artists/${album.artist_id}`}>{album.artist_name}</Link> -- {rating}/5 
        </div>
       <br/>
       <br/>
