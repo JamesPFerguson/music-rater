@@ -8,7 +8,11 @@ export default class Review extends React.Component {
 
       <span className="review-album-title">
       <a href={`/albums/${this.props.album.id}`}>{this.props.album.title}</a>
-        by: <a href={`/artists/${this.props.album.artist_id}`}>{this.props.album.artist_name}</a> -- {this.props.rating}/5 
+         by: 
+        {/*<a href={`/artists/${this.props.album.artist_id}`}> */}
+        {this.props.album.artist_name}
+        {/* </a> */}
+         -- {this.props.rating}/5 
        </span>
       <br/>
       <br/>
