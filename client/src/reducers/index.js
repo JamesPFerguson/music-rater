@@ -1,6 +1,7 @@
-// import { combineReducers } from 'redux';
-// import reviewReducer from './reviewReducer';
+import { combineReducers } from 'redux';
+import reviewsReducer from './reviews';
+import albumReviewsReducer from './albumReview';
 
-// export const rootReducer = combineReducers({
-//     reviw: reviewReducer,
-//   })
+export const rootReducer = combineReducers({
+    reviews: reviewsReducer, album_reviews: albumReviewsReducer
+  })
