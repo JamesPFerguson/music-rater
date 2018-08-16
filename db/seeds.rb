@@ -22,13 +22,16 @@ hb = Album.create(title: "Helplessness Blues",
 
 review1 = Review.create(album_id: hmc.id, user_id: bob.id, rating: 4,
   content: "This album was great.")
+    hmc.reviews << review1
 review2 = Review.create(album_id: ot.id, user_id: bob.id, rating: 2,
     content: "This album was not good.")
-
+    ot.reviews << review2
 review3 = Review.create(album_id: hmc.id, user_id: tom.id, rating: 3,
     content: "This album was okay.")
+    hmc.reviews << review3
 review4 = Review.create(album_id: hb.id, user_id: tom.id, rating: 5,
     content: "This album was great.")
+    hb.reviews << review4
 
 #This table may be completely unnecessary. We'll see.
 AlbumReview.create(album_id: review1.album_id, review_id: review1.id)

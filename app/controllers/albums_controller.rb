@@ -13,6 +13,7 @@ class AlbumsController < ApplicationController
   end
 
   def show
+    #renders only an album
     @album = Album.find(params[:id])
     render json: @album
   end
