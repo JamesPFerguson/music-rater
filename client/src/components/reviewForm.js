@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {addReview} from '../actions/review'
 export default class ReviewForm extends React.Component {
 
 
@@ -34,11 +34,7 @@ export default class ReviewForm extends React.Component {
     handleSubmit = (e) => {
         e.preventDefault();
 
-        // let reviewData = Object.assign({}, this.state)
-        // this.props.addReview(this.state)
-        // for (const key of Object.keys(this.refs)) {
-        //     this.refs[key].value = '';
-        // }
+        this.props.addReview(this.state)
         this.resetForm();
        
 
