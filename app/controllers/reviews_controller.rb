@@ -7,7 +7,10 @@ class ReviewsController < ApplicationController
     album = Album.create(title: params[:album], art_url: params[:art_url],
        artist_name: params[:artist_name])
     artist.albums << album
+    @review = Review.create(rating: params[:rating], content: params[:content])
+    album.reviews << @review
     
+    render json: @review
   end
   
   def update
