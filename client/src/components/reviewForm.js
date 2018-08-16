@@ -1,6 +1,9 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import {addReview} from '../actions/review'
-export default class ReviewForm extends React.Component {
+import { bindActionCreators } from 'redux';
+
+class ReviewForm extends React.Component {
 
 
     constructor(props) {
@@ -33,16 +36,12 @@ export default class ReviewForm extends React.Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-
         this.props.addReview(this.state)
         this.resetForm();
-       
-
-
     }
 
     render() {
-        const {username, album, artist_name, rating, content} = this.state;
+        const {username, album, art_url, artist_name, rating, content} = this.state;
         return (
             <div className="review-form">
             <h3> Add a review </h3>
@@ -54,6 +53,9 @@ export default class ReviewForm extends React.Component {
             <br/><br/>
             <label>Album: </label>
             <input type="text" ref="album" name="album" value={album} onChange={this.handleChange} />
+            <br/><br/>
+            <label>art_url: </label>
+            <input type="text" ref="art_url" name="art_url" value={art_url} onChange={this.handleChange} />
             <br/><br/>
             <label>Artist: </label>
             <input type="text" ref="artist_name" name="artist_name" value={artist_name} onChange={this.handleChange} />
@@ -73,3 +75,11 @@ export default class ReviewForm extends React.Component {
     }
 
 }
+
+const mapDispatchToProps = (dispatch) => {
+    return bindActionCreators({
+      addReview: addReview
+    }, dispatch)
+  }
+
+  export default connect(null, mapDispatchToProps)(ReviewForm);

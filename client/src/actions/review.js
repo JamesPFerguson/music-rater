@@ -17,7 +17,7 @@ export function addReview(reviewData) {
             headers: {
                 "Content-Type": "application/json; charset=utf-8",
             },
-            body: JSON.stringify(data)
+            body: JSON.stringify(reviewData)
         })
             .then(res => res.json())
             .then(response => dispatch({type: 'ADD_REVIEW', review: response})
