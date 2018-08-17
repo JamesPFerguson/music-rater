@@ -18,16 +18,11 @@ class ReviewsListContainer extends React.Component {
     }
 
     render() {
-        // if (this.props.reviews.loaded === true) {
             return (
              <div className="reviews-list-container">
                 <ReviewList reviews={this.props.reviews.reviews}/>
                 </div>
             )
-        // }
-        // else {
-        //     return <LoadingPage />
-        // }
     }
 
 }

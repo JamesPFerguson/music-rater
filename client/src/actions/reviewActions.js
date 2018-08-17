@@ -2,7 +2,6 @@
 export function fetchReviews() {
 
     return (dispatch) => {
-        // dispatch({ type: 'LOADING_POSTS' });
         return fetch('http://localhost:3000/reviews')
             .then(res => res.json())
             .then(response => {dispatch({type: 'FETCH_REVIEWS', reviews: response})}
