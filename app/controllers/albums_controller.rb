@@ -14,8 +14,9 @@ class AlbumsController < ApplicationController
 
   def show
     #renders only an album
-    @album = Album.find(params[:id])
-    render json: @album
+    album = Album.find(params[:id])
+    reviews = album.reviews
+    render json: reviews
   end
 
   def index
