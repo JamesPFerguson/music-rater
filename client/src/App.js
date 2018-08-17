@@ -11,8 +11,8 @@ class App extends Component {
     return (
       <div className="App">
       <br/><br/>
-      <ReviewForm/>
-      <ReviewContainer/>
+      {/* <ReviewForm/>
+      <ReviewContainer/> */}
       <ReviewsListContainer />
       </div>
     );

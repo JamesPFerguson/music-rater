@@ -2,6 +2,7 @@ import React from 'react';
 import { fetchReviews } from '../actions/reviewActions';
 import ReviewList from '../components/reviewList';
 import { connect } from 'react-redux'
+import LoadingPage from '../components/loadingPage';
 
 class ReviewsListContainer extends React.Component {
 
@@ -12,16 +13,21 @@ class ReviewsListContainer extends React.Component {
         }
     }
 
-    componentWillMount() {
+    componentDidMount() {
         this.props.fetchReviews();
     }
 
     render() {
-        return (
-            <div className="reviews-list-container">
-            <ReviewList reviews={this.props.reviews}/>
-            </div>
-        )
+        if (this.props.reviews.loaded === true) {
+            return (
+             <div className="reviews-list-container">
+                <ReviewList reviews={this.props.reviews.reviews}/>
+                </div>
+            )
+        }
+        else {
+            return <LoadingPage />
+        }
     }
 
 }
