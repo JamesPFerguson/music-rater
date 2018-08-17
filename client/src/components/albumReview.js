@@ -1,12 +1,7 @@
 import React from 'react';
 import User from './user';
 
-export default class AlbumReviews extends React.Component {
-
-    componentWillMount() {
-        
-    }
-
+export default class AlbumReview extends React.Component {
 
     render() {
         return (

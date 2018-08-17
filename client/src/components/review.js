@@ -1,6 +1,8 @@
 import React from 'react';
 import Album from './album'
 import User from './user';
+import AlbumReview from './albumReview';
+
 export default class Review extends React.Component {
 
   render() {
@@ -11,12 +13,8 @@ export default class Review extends React.Component {
       
       <div className="review">
         <Album album={this.props.album} />
-        <div className="review-user">
-          <User user={this.props.user} />
-          <label>Gives this album a </label> 
-          {this.props.rating}/5
-        </div>
-        <span className="review-text">{this.props.content}</span>
+        <AlbumReview user={this.props.user} 
+        rating={this.props.rating} content={this.props.content} />
       </div>
     )
    }
