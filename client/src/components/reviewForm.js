@@ -54,7 +54,7 @@ class ReviewForm extends React.Component {
             <label>Album: </label>
             <input type="text" ref="album" name="album" value={album} onChange={this.handleChange} />
             <br/><br/>
-            <label>art_url: </label>
+            <label>Album Art Image URL:</label>
             <input type="text" ref="art_url" name="art_url" value={art_url} onChange={this.handleChange} />
             <br/><br/>
             <label>Artist: </label>
