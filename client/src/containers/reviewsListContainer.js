@@ -2,7 +2,6 @@ import React from 'react';
 import { fetchReviews } from '../actions/reviewActions';
 import ReviewList from '../components/reviewList';
 import { connect } from 'react-redux'
-import LoadingPage from '../components/loadingPage';
 
 class ReviewsListContainer extends React.Component {
 
