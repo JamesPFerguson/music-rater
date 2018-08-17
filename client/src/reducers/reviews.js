@@ -6,7 +6,7 @@ export default function reviewsReducer(state = {
             const review = Object.assign({}, action.review)
             return { reviews: state.reviews.concat(review) }
         case 'FETCH_REVIEWS':
-            return { reviews: state.reviews}
+            return { reviews: action.reviews}
         default:
             return state;
     }

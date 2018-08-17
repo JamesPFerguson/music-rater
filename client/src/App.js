@@ -4,6 +4,7 @@ import './App.css';
 import ReviewContainer from './containers/reviewContainer';
 // import { Router, Route, Link, NavLink} from 'react-router-dom';
 import ReviewForm from './components/reviewForm';
+import ReviewsListContainer from './containers/reviewsListContainer';
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
       <br/><br/>
       <ReviewForm/>
       <ReviewContainer/>
+      <ReviewsListContainer />
       </div>
     );
   }

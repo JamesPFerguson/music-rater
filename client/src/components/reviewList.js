@@ -1,25 +1,28 @@
 import React from 'react';
 import Review from './review'
 
-    const ReviewsList = ({reviews}) => {
+export default class ReviewList extends React.Component {
 
-        if (reviews) {
-            const reviews = reviewsList.map((review, index) => {
-                return (
-                    <div id={index}>
-                        <Review review_id={review.review_id} rating={review.rating} content={review.content} album={review.album} user={review.user} />
-                    </div>
-                )
-            })
+    render() {
+
+            debugger
+        
+            // const formattedReviews = reviews.map((review, index) => {
+            //     return (
+            //         <div id={index}>
+            //             <Review review_id={review.review_id} rating={review.rating} content={review.content} album={review.album} user={review.user} />
+            //         </div>
+            //     )
+            // })
 
             return (
-                <div className="reviewsList"> {posts} </div>
+                <div className="reviewsList"> formattedReviews </div>
             )
        
 
-        } else {
-            return null;
-        }
-    }
+        // } else {
+        //     return null;
+        // }
 
-    export default ReviewsList
+    }
+}
