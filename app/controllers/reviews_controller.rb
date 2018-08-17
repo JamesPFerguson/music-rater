@@ -11,7 +11,7 @@ class ReviewsController < ApplicationController
     @review = Review.create(rating: params[:rating], content: params[:content])
     album.reviews << @review
 
-    AlbumReview.create(album_id: album.id, review_id: review.id)
+    AlbumReview.create(album_id: album.id, review_id: @review.id)
     
     render json: @review
   end

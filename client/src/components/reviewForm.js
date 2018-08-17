@@ -78,7 +78,7 @@ class ReviewForm extends React.Component {
 
 const mapDispatchToProps = (dispatch) => {
     return bindActionCreators({
-      addReview: addReview
+        addReview: addReview
     }, dispatch)
   }
 

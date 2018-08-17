@@ -11,9 +11,8 @@ export function fetchReviews() {
 }
 
 export function addReview(reviewData) {
-
     return (dispatch) => {
-        return fetch('http://localhost:3000/reviews/', {
+        return fetch('http://localhost:3000/reviews', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json; charset=utf-8",
@@ -21,7 +20,6 @@ export function addReview(reviewData) {
             body: JSON.stringify(reviewData)
         })
             .then(res => res.json())
-            .then(response => dispatch({type: 'ADD_REVIEW', review: response})
-        );
+            .then(response => dispatch({type: 'ADD_REVIEW', review: response}))
     }
 }

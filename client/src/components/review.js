@@ -4,6 +4,9 @@ import User from './user';
 export default class Review extends React.Component {
 
   render() {
+
+    if (this.props.user) {
+
     return (
       
       <div className="review">
@@ -16,6 +19,11 @@ export default class Review extends React.Component {
         <span className="review-text">{this.props.content}</span>
       </div>
     )
+   }
+    else {
+      return null
+
+    }
   }
 
 }
