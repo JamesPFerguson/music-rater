@@ -3,18 +3,25 @@ import User from './user';
 
 export default class AlbumReviews extends React.Component {
 
-    componentWillMount() {
+    componentDidMount() {
         
     }
 
 
     render() {
+        if (this.props.album_reviews) {
+            const formattedReviews = this.props.album_reviews.map((review, index) => {
+                return (
+                    <div id={index}>
+                        <AlbumReview key={index.toString()} rating={review.rating} content={review.content} />
+                    </div>
+                )
+            })
         return (
-            <div className="album-reviews">
-            <User user={this.props.user} />
-            <label> Gives this album a </label> {this.props.rating}/5
-            <div> {this.props.content} </div>
-            </div>
+            <Album album={this.props.album} />
         )
     }
+
+    }
+    
 }

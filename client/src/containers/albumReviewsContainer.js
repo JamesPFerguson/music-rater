@@ -7,14 +7,18 @@ class albumReviewsContainer extends React.Component {
         super();
 
         this.state = {
-
+            album_reviews: []
         }
+    }
+
+    componentDidMount() {
+        
     }
 
     render() {
         return (
             <div className="albumReviewsContainer">
-            
+            <AlbumReviews album_reviews={this.props.album_reviews} />
             </div>
         )
     }
