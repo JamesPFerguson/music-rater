@@ -3,7 +3,7 @@ export default function albumReviewsReducer(state = {
     }, action) {
     switch (action.type) {
         case 'FETCH_ALBUM_REVIEWS':  
-        return {album_reviews: state.album_reviews}
+        return {album_reviews: action.album_reviews}
         default:
             return state;
     }

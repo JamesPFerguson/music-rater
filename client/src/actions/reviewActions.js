@@ -1,4 +1,3 @@
-
 export function fetchReviews() {
 
     return (dispatch) => {
