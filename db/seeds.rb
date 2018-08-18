@@ -6,8 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-bob = User.create(username:"bob")
-tom = User.create(username:"tom")
+bob = User.create(username:"Bob")
+tom = User.create(username:"Tom")
 
 plini = Artist.create(name: "Plini")
 ff = Artist.create(name: "Fleet Foxes")

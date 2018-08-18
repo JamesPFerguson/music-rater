@@ -4,11 +4,11 @@ export default class User extends React.Component {
 
     render() {
         return (
-            <span className="user">
-            {/* <a href={`/users/${this.props.user.id}`}> */}
-                {this.props.user.username}
-            {/* </a> */}
+            <span>
+            <span className="user">{this.props.user.username}</span><span> </span>
             </span>
         )
     }
 }
+
+            {/* <a href={`/users/${this.props.user.id}`}> */}{/* </a> */}
