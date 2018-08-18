@@ -50,6 +50,12 @@ img {
   font-weight: bold;
 }
 
+.review-form-container{
+  background-color: rgb(242, 249, 253);
+  height: 100%;
+  width: 100%;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
