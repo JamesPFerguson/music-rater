@@ -1,9 +1,10 @@
 import React from 'react';
 import { bindActionCreators } from 'redux';
-import {fetchArtistAlbums} from '../actions/artistActions'
-import { connect } from 'react-redux'
+import {fetchArtistAlbums} from '../actions/artistActions';
+import { connect } from 'react-redux';
+// import Artist from '../components/artist';
+import Albums from '../components/albums';
 import Artist from '../components/artist';
-import Albums from '../components/albums'
 
 class ArtistAlbumsContainer extends React.Component {
 
@@ -22,7 +23,8 @@ class ArtistAlbumsContainer extends React.Component {
     render() {
             return (
                 <div className="albumReviewsContainer">
-                <Artist album={this.props.artist_albums.artist} />
+                <Artist name={this.props.artist_albums.artist_albums.name} />
+                <br/>
                 <Albums albums={this.props.artist_albums.artist_albums} />
                 </div>
             )

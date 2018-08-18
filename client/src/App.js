@@ -8,7 +8,7 @@ import ReviewForm from './components/reviewForm';
 import ReviewsListContainer from './containers/reviewsListContainer';
 import Home from './components/home'
 import AlbumReviewsContainer from './containers/albumReviewsContainer';
-import albumReviewsContainer from './containers/albumReviewsContainer';
+import ArtistAlbumsContainer from './containers/artistAlbumsContainer';
 
 class App extends Component {
   render() {
@@ -18,8 +18,7 @@ class App extends Component {
             {/* <Route exact path="/" component={Home} />
             <Route exact path="/albums/:id" component={AlbumReviewsContainer} />
             <Route exact path="/artists/:id" component={ArtistContainer} /> */}
-            <Route exact path="/" component={albumReviewsContainer} />
-            <div> p </div>
+            <Route exact path="/" component={ArtistAlbumsContainer} />
          </div>
        </Router>
     );
