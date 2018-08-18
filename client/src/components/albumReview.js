@@ -5,9 +5,9 @@ export default class AlbumReview extends React.Component {
 
     render() {
         return (
-            <div className="album-reviews">
+            <div className="album-review">
             <User user={this.props.user} />
-            <label> Gives this album a </label> {this.props.rating}/5
+            <label> gives this album: </label> {this.props.rating}/5
             <div> {this.props.content} </div>
             </div>
         )
