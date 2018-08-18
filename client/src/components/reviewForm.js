@@ -43,33 +43,49 @@ class ReviewForm extends React.Component {
     render() {
         const {username, album, art_url, artist_name, rating, content} = this.state;
         return (
-            <div className="review-form">
-            <h3> Add a review </h3>
+            <div> <h3 className="col-sm-4"> Add a review </h3>
+                <div className="review-form">
+                    <form name="add-review" onSubmit={this.handleSubmit}>
+                        <div className="form-group row">
+                            <label className="col-2 col-form-label">Username: </label>
+                            <div class="col-sm-2">
+                                <input type="text" size="25" className="form-control" ref="username" name="username" value={username} onChange={this.handleChange} />
+                            </div>
+                        </div>
+                        <div className="form-group row">
+                            <label className="col-2 col-form-label">Album: </label>
+                            <div class="col-sm-2">
+                                <input type="text" className="form-control" ref="album" name="album" value={album} onChange={this.handleChange} />
+                            </div>
+                        </div>
+                        <div className="form-group row">
+                            <label className="col-2 col-form-label">Album Art Image URL:</label>
+                            <div class="col-sm-5">
+                                <input type="text" className="form-control" ref="art_url" name="art_url" value={art_url} onChange={this.handleChange} />
+                            </div>
+                        </div>
+                        <div className="form-group row">
+                            <label className="col-2 col-form-label">Artist: </label>
+                            <div class="col-sm-2">
+                                <input type="text" className="form-control" ref="artist_name" name="artist_name" value={artist_name} onChange={this.handleChange} />
+                            </div>
+                        </div>
+                        <div className="form-group row">
+                            <label className="col-2 col-form-label">Rating: </label>
+                            <div class="col-sm-1">
+                                <input type="text" className="form-control" ref="rating" name="rating" value={rating} onChange={this.handleChange} />
+                            </div>
+                        </div>
+                        <div className="form-group row">
+                            <label className="col-2 col-form-label">Review: </label>
+                            <div class="col-sm-10">
+                                <textarea rows="8" cols="80" className="form-control" ref="content" name="content" value={content} onChange={this.handleChange} />
+                            </div>
+                        </div>
+                        <input type="submit"/>
 
-            <form name="add-review" onSubmit={this.handleSubmit}>
-            <br/><br/>
-            <label>Username: </label>
-            <input type="text" ref="username" name="username" value={username} onChange={this.handleChange} />
-            <br/><br/>
-            <label>Album: </label>
-            <input type="text" ref="album" name="album" value={album} onChange={this.handleChange} />
-            <br/><br/>
-            <label>Album Art Image URL:</label>
-            <input type="text" ref="art_url" name="art_url" value={art_url} onChange={this.handleChange} />
-            <br/><br/>
-            <label>Artist: </label>
-            <input type="text" ref="artist_name" name="artist_name" value={artist_name} onChange={this.handleChange} />
-            <br/><br/>
-            <label>Rating: </label>
-            <input type="text" ref="rating" name="rating" value={rating} onChange={this.handleChange} />
-            <br/><br/>
-            <label>Review: </label>
-            <br/>
-            <textarea rows="8" cols="80"  ref="content" name="content" value={content} onChange={this.handleChange} />
-            <br/><br/>
-            <input type="submit"/>
-
-            </form>
+                    </form>
+                </div>
             </div>
         )
     }

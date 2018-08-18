@@ -11,7 +11,7 @@ export default class Review extends React.Component {
 
     return (
       
-      <div className="review card">
+      <div className="review card center-block">
         <Album album={this.props.album} />
         <AlbumReview user={this.props.user} 
         rating={this.props.rating} content={this.props.content} />
