@@ -11,12 +11,15 @@ import ReviewsListContainer from './containers/reviewsListContainer';
 import Home from './components/home'
 import AlbumReviewsContainer from './containers/albumReviewsContainer';
 import ArtistAlbumsContainer from './containers/artistAlbumsContainer';
+import NavBar from './components/navBar'
 
 class App extends Component {
   render() {
     return (
       <Router>
          <div className="App">
+         <NavBar />
+         <br/><br/>
             <Route exact path="/" component={ReviewsListContainer} />
             <Route exact path="/albums/:id" component={AlbumReviewsContainer} />
             <Route exact path="/artists/:id" component={ArtistAlbumsContainer} />

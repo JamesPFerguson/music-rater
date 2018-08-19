@@ -56,6 +56,41 @@ img {
   width: 100%;
 }
 
+.holder {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgb(242, 249, 253);
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    width: 65rem;
+    margin-bottom: 10px;
+    margin-top: 3px;
+}
+
+.navbar {
+  background: rgb(40, 44, 46)
+}
+
+.review {
+  border: 2px solid rgb(20, 50, 66);
+  /* border-radius: 0.25rem; */
+  margin-bottom: 10px;
+    margin-top: 10px;
+    width: 65rem;
+    background: rgb(199, 230, 248);
+}
+.reviews-list  {
+}
+.reviews-list-container {
+  margin: 0 auto;
+  width: 1300px
+}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

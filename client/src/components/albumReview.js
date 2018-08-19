@@ -5,13 +5,14 @@ export default class AlbumReview extends React.Component {
 
     render() {
         return (
-            <span className="album-review float-right">
-                <span>
+            <div className="album-review" clearfix>
+                <div className="">
+                <br/><br/>
                     <User user={this.props.user} />
                     <label> gives this album: </label> {this.props.rating}/5
-                </span>
-                <span> {this.props.content} </span>
-            </span>
+                </div>
+                <div classname=""><p> {this.props.content} </p></div>
+            </div>
         )
     }
 }
