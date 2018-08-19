@@ -24,12 +24,12 @@ review1 = Review.create(album_id: hmc.id, user_id: bob.id, rating: 4,
   content: "This album was great. Handmade Cities was a thoughtful prog album that I enjoyed having on both in the background or for more active listening." +
   " Electric Sunrise is my favorite track. It slowly builds into a really, beautiful, energetic piece. This album is upbeat and energetic.")
     hmc.reviews << review1
-review2 = Review.create(album_id: ot.id, user_id: bob.id, rating: 2,
+review2 = Review.create(album_id: ot.id, user_id: bob.id, rating: 4,
     content: "This EP was good. Heart is a bouncy track, that would be right at home being played outside in the summer around dusk at a craft beer bar." +
     "The notes have a tendency to strech out, and this lends to the already warm feel of the track. This EP was more surreal than the HMC album")
     ot.reviews << review2
-review3 = Review.create(album_id: hmc.id, user_id: tom.id, rating: 3,
-    content: "This album was okay.")
+review3 = Review.create(album_id: hmc.id, user_id: tom.id, rating: 5,
+    content: "This album was good.")
     hmc.reviews << review3
 review4 = Review.create(album_id: hb.id, user_id: tom.id, rating: 5,
     content: "This album was great.")
