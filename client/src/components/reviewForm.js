@@ -43,7 +43,7 @@ class ReviewForm extends React.Component {
     render() {
         const {username, album, art_url, artist_name, rating, content} = this.state;
         return (
-            <div className="review-form-container">
+            <div className="review-form-container mx-auto">
                 <div> <h3 className="col-sm-4"> Add a review </h3> <br/>
                     <div className="review-form">
                         <form name="add-review" onSubmit={this.handleSubmit}>
