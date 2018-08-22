@@ -20,7 +20,7 @@ class ReviewsListContainer extends React.Component {
             return (
              <div className="reviews-list-container">
                 <ReviewList reviews={this.props.reviews.reviews}/>
-                </div>
+            </div>
             )
     }
 

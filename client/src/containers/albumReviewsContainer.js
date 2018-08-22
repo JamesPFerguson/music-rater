@@ -27,8 +27,11 @@ class AlbumReviewsContainer extends React.Component {
         }
             return (
                 <div className="albumReviewsContainer">
-                <Album album={album} />
-                <AlbumReviews album_reviews={this.props.album_reviews.album_reviews} />
+                <div>
+                    <Album album={album} /></div>
+                <div>
+                    <AlbumReviews album_reviews={this.props.album_reviews.album_reviews} />
+                </div>
                 </div>
             )
     }

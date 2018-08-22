@@ -8,7 +8,7 @@ export default class ReviewList extends React.Component {
             if (this.props.reviews) {
             const formattedReviews = this.props.reviews.map((review, index) => {
                 return (
-                    <div id={index}>
+                    <div id={index} >
                         <Review key={index.toString()} review_id={review.review_id} rating={review.rating} content={review.content} album={review.album} user={review.user} />
                     </div>
                 )

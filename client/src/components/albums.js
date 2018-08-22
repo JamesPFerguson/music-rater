@@ -7,7 +7,7 @@ export default class ReviewList extends React.Component {
             if (this.props.albums.albums) {
                 const formattedAlbums = this.props.albums.albums.map((album, index) => {
                 return (
-                    <div id={index}>
+                    <div id={index} className="holder mx-auto">
                         <ArtistAlbum key={index.toString()} album={album} />
                     </div>
                 )

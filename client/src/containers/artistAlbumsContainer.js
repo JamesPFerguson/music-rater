@@ -23,8 +23,7 @@ class ArtistAlbumsContainer extends React.Component {
     render() {
             return (
                 <div className="albumReviewsContainer">
-                <Artist name={this.props.artist_albums.artist_albums.name} />
-                <br/>
+                <h1><Artist name={this.props.artist_albums.artist_albums.name} /></h1>
                 <Albums albums={this.props.artist_albums.artist_albums} />
                 </div>
             )
