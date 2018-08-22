@@ -10,7 +10,7 @@ export default class AlbumReview extends React.Component {
                     <User user={this.props.user} />
                     <label> gives this album: </label> {this.props.rating}/5
                 </div>
-                <div classname=""><p> {this.props.content} </p></div>
+                <div className=""><p> {this.props.content} </p></div>
             </div>
         )
     }

@@ -2,7 +2,8 @@ import React from 'react';
 import ReviewsListContainer from '../containers/reviewsListContainer';
 import ReviewForm from './reviewForm';
 import { connect } from 'react-redux';
-import { renderForm } from '../actions/homeActions';
+import { toggleForm } from '../actions/homeActions';
+import { bindActionCreators } from 'redux';
 
 class Home extends React.Component {
 
@@ -12,23 +13,28 @@ class Home extends React.Component {
         this.state = {
             clicked: false
         }
+        this.handleClick = this.handleClick.bind(this);
     }
 
-    render() {
+    handleClick() {
+        this.props.toggleForm(this.props.clicked.clicked)
+    }
 
-        if (this.props.clicked === true) {
+
+    render() {
+        if (this.props.clicked.clicked === true) {
             return (
                 <div>
+                    <button onClick={this.handleClick}>Hide Review Form</button>
                     <ReviewForm/>
                     <ReviewsListContainer/>
                 </div>
             )
         }
-        else {
+        else if (this.props.clicked.clicked === false) {
             return (
             <div>
-                <button onClick={this.props.renderform}>Add a Review</button>
-                <ReviewForm/>
+                <button onClick={this.handleClick}>Add a Review</button>
                 <ReviewsListContainer/>
             </div>
             )
@@ -45,12 +51,9 @@ const mapStateToProps = (state) => {
 }
 
 const mapDispatchToProps = (dispatch) => {
-    return {
-        renderForm: () => {
-            dispatch(renderForm())
-        }
-    }
+    return bindActionCreators({
+        toggleForm: toggleForm
+    }, dispatch)
 }
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home)

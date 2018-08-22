@@ -61,7 +61,7 @@ class ReviewForm extends React.Component {
                             </div>
                             <div className="form-group row">
                                 <label className="col-2 col-form-label">Album Art Image URL:</label>
-                                <div class="col-sm-5">
+                                <div className="col-sm-5">
                                     <input type="text" className="form-control" ref="art_url" name="art_url" value={art_url} onChange={this.handleChange} />
                                 </div>
                             </div>

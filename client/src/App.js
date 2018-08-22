@@ -20,7 +20,7 @@ class App extends Component {
          <div className="App">
          <NavBar />
          <br/><br/>
-            <Route exact path="/" component={ReviewsListContainer} />
+            <Route exact path="/" component={Home} />
             <Route exact path="/albums/:id" component={AlbumReviewsContainer} />
             <Route exact path="/artists/:id" component={ArtistAlbumsContainer} />
             <Route exact path="/reviews/new" component={ReviewForm} />
