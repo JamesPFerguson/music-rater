@@ -11,10 +11,10 @@ export default class Review extends React.Component {
     return (
       
       <div className="review row mx-auto">
-        <div className="p-2 col-md-4">
+        <div className="p-2 col-4">
           <Album album={this.props.album} />
         </div>
-        <div className="p-2 col-md-7">
+        <div className="col-8">
           <AlbumReview user={this.props.user} rating={this.props.rating} content={this.props.content} />
         </div>
       </div>

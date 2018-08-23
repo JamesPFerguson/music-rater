@@ -3,9 +3,6 @@ import './App.css';
 import './css/bootstrap.css';
 import './css/bootstrap-grid.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-// import {Review} from './components/review';
-// import ReviewContainer from './containers/reviewContainer';
-// import { Router, Route, Link, NavLink} from 'react-router-dom';
 import ReviewForm from './components/ReviewList/ReviewForm';
 import Home from './components/Home'
 import AlbumReviewsContainer from './components/AlbumReviews/AlbumReviewsContainer';
