@@ -26,12 +26,13 @@ class AlbumReviewsContainer extends React.Component {
             album = this.props.album_reviews.album_reviews[0].album
         }
             return (
-                <div className="albumReviewsContainer">
-                <div>
-                    <Album album={album} /></div>
-                <div>
-                    <AlbumReviews album_reviews={this.props.album_reviews.album_reviews} />
-                </div>
+                <div className="albumReviewsContainer row">
+                    <div className="col-4">
+                        <Album album={album} />
+                    </div>
+                    <div className="col-2">
+                        <AlbumReviews album_reviews={this.props.album_reviews.album_reviews} />
+                    </div>
                 </div>
             )
     }

@@ -84,16 +84,20 @@ img {
     word-wrap: break-word;
     background-color: rgb(199, 230, 248);
     background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.125);
+    border: 3px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
     width: 65rem;
     margin-bottom: 10px;
     padding: 3px;
-    margin-top: 3px;
+    margin-top: 20px;
 }
 
 .navbar {
   background: rgb(40, 44, 46)
+}
+
+body {
+  background-color: rgb(219, 219, 219) !important;
 }
 
 .review {
