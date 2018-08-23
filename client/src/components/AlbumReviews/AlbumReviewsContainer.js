@@ -1,10 +1,9 @@
 import React from 'react';
-import Review from '../components/review';
 import { bindActionCreators } from 'redux';
-import {fetchAlbumReviews} from '../actions/albumReviewsActions'
+import {fetchAlbumReviews} from '../../actions/albumReviewsActions'
 import { connect } from 'react-redux'
-import AlbumReviews from '../components/albumReviews';
-import Album from '../components/album'
+import AlbumReviews from './AlbumReviews';
+import Album from '../Album'
 
 class AlbumReviewsContainer extends React.Component {
 

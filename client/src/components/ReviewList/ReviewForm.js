@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import {addReview} from '../actions/reviewActions'
+import {addReview} from '../../actions/reviewActions'
 import { bindActionCreators } from 'redux';
 
 class ReviewForm extends React.Component {

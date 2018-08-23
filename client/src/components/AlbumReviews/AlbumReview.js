@@ -1,5 +1,5 @@
 import React from 'react';
-import User from './user';
+import User from '../User';
 
 export default class AlbumReview extends React.Component {
 

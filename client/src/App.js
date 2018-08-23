@@ -6,12 +6,11 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 // import {Review} from './components/review';
 // import ReviewContainer from './containers/reviewContainer';
 // import { Router, Route, Link, NavLink} from 'react-router-dom';
-import ReviewForm from './components/reviewForm';
-import ReviewsListContainer from './containers/reviewsListContainer';
-import Home from './components/home'
-import AlbumReviewsContainer from './containers/albumReviewsContainer';
-import ArtistAlbumsContainer from './containers/artistAlbumsContainer';
-import NavBar from './components/navBar'
+import ReviewForm from './components/ReviewList/ReviewForm';
+import Home from './components/Home'
+import AlbumReviewsContainer from './components/AlbumReviews/AlbumReviewsContainer';
+import ArtistAlbumsContainer from './components/ArtistAlbums/ArtistAlbumsContainer';
+import NavBar from './components/NavBar'
 
 class App extends Component {
   render() {

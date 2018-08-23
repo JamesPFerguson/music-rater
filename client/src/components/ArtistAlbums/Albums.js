@@ -1,5 +1,5 @@
 import React from 'react';
-import ArtistAlbum from './artistAlbum'
+import ArtistAlbum from './ArtistAlbum'
 
 export default class ReviewList extends React.Component {
 

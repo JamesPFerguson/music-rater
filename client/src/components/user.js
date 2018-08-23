@@ -10,5 +10,3 @@ export default class User extends React.Component {
         )
     }
 }
-
-            {/* <a href={`/users/${this.props.user.id}`}> */}{/* </a> */}

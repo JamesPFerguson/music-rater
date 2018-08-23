@@ -1,4 +1,4 @@
-export default function albumReviewsReducer(state = {
+export default function artistAlbumsReducer(state = {
     artist_albums: []
     }, action) {
     switch (action.type) {

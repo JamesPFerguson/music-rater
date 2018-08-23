@@ -1,7 +1,6 @@
 import React from 'react';
-import Album from './album'
-import User from './user';
-import AlbumReview from './albumReview';
+import Album from '../Album';
+import AlbumReview from '../AlbumReviews/AlbumReview';
 
 export default class Review extends React.Component {
 

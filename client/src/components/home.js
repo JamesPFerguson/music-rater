@@ -1,6 +1,6 @@
 import React from 'react';
-import ReviewsListContainer from '../containers/reviewsListContainer';
-import ReviewForm from './reviewForm';
+import ReviewsListContainer from './ReviewList/ReviewsListContainer';
+import ReviewForm from './ReviewList/ReviewForm';
 import { connect } from 'react-redux';
 import { toggleForm } from '../actions/homeActions';
 import { bindActionCreators } from 'redux';

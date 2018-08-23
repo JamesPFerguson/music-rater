@@ -1,10 +1,10 @@
 import React from 'react';
 import { bindActionCreators } from 'redux';
-import {fetchArtistAlbums} from '../actions/artistActions';
+import {fetchArtistAlbums} from '../../actions/artistActions';
 import { connect } from 'react-redux';
 // import Artist from '../components/artist';
-import Albums from '../components/albums';
-import Artist from '../components/artist';
+import Albums from './Albums';
+import Artist from '../Artist';
 
 class ArtistAlbumsContainer extends React.Component {
 
