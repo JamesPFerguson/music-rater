@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import {addReview} from '../../actions/reviewActions'
 import { bindActionCreators } from 'redux';
+import isUrl from 'is-url';
 
 class ReviewForm extends React.Component {
 
@@ -48,10 +49,31 @@ class ReviewForm extends React.Component {
              valid = false
            }
         }
+        if (parseInt(this.state.rating, 10) > 5 || parseInt(this.state.rating, 10) < 0 || Number.isNaN(parseInt(this.state.rating, 10)) ) {
+            valid = false
+        }
+        if (!isUrl(this.state.art_url)) {
+            valid = false
+        }
+        if (this.state.content.length < 100) {
+            valid = false
+        }
         return valid
     }
 
     render() {
+        let errors = null
+        if (!this.validInputs()) {
+            errors = <span>
+                    Rating must between 0 and 5
+                    <br/>
+                    All Fields must be filled
+                    <br/>
+                    An album art URL must be provided
+                    <br/>
+                    Review must be Longer than 100 characters
+                    </span>
+        }
         this.validInputs()
         const {username, album, art_url, artist_name, rating, content} = this.state;
         return (
@@ -97,7 +119,12 @@ class ReviewForm extends React.Component {
                             </div>
                             <div className="form-group row justify-content-center">
                                 <div className="p-3">
-                                <input type="submit" name="Add Review" value="Add Review" />
+                                    {errors}
+                                </div>
+                            </div>
+                            <div className="form-group row justify-content-center">
+                                <div className="">
+                                <input type="submit" disabled={!this.validInputs()} name="Add Review" value="Add Review" />
                                 </div>
                             </div>
 
