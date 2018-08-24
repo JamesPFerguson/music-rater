@@ -51,7 +51,8 @@ img {
 }
 
 .review-form-container{
-  background-color: rgb(242, 249, 253);
+  background-color: rgb(247, 247, 247);
+  border: 2px solid rgb(0, 0, 0);
 }
 
 .holder {
@@ -94,9 +95,10 @@ img {
   background: rgb(40, 44, 46)
 }
 
+/* 
 body {
-  background-color: rgb(219, 219, 219) !important;
-}
+  background-color: rgb(255, 255, 255) !important;
+} */
 
 .review {
   border: 2px solid rgb(20, 50, 66);

@@ -26,6 +26,8 @@ class Home extends React.Component {
             return (
                 <div>
                     <button onClick={this.handleClick}>Hide Review Form</button>
+                    <br/>
+                    <br/>
                     <ReviewForm/>
                     <ReviewsListContainer/>
                 </div>

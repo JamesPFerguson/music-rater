@@ -23,6 +23,7 @@ class ReviewForm extends React.Component {
 
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.validInputs = this.validInputs.bind(this);
     }
 
     resetForm = () => {
@@ -40,7 +41,18 @@ class ReviewForm extends React.Component {
         this.resetForm();
     }
 
+    validInputs = () => {
+        let valid = true
+        for (const key of Object.keys(this.state)) {
+           if (this.state[key] === "") {
+             valid = false
+           }
+        }
+        return valid
+    }
+
     render() {
+        this.validInputs()
         const {username, album, art_url, artist_name, rating, content} = this.state;
         return (
             <div className="review-form-container ">
