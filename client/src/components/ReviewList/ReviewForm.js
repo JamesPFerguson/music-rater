@@ -37,8 +37,10 @@ class ReviewForm extends React.Component {
     }
 
     handleSubmit = (e) => {
-        e.preventDefault();
+        e.preventDefault(); 
+        console.log("A")
         this.props.addReview(this.state)
+        console.log("B")
         this.resetForm();
     }
 

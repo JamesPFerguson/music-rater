@@ -4,6 +4,20 @@ import AlbumReview from '../AlbumReviews/AlbumReview';
 
 export default class Review extends React.Component {
 
+  constructor(props) {
+    super();
+
+    this.state = {
+      votes: 0
+    }
+  }
+
+  handleClick = () => {
+    this.setState({
+      votes: this.state.votes + 1
+    })
+  }
+
   render() {
 
     if (this.props.user) {
@@ -17,6 +31,7 @@ export default class Review extends React.Component {
         <div className="col-8">
           <AlbumReview user={this.props.user} rating={this.props.rating} content={this.props.content} />
         </div>
+        <button onClick={this.handleClick}>Click Me</button> <span>{this.state.votes}</span>
       </div>
     )
    }
