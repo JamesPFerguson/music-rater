@@ -6,21 +6,24 @@ To install and run this program,
 
 clone the git respository
 
-type cd music-tracker
+type
+```cd music-tracker
 
-type bundle install
+ bundle install
 
-type rake db:migrate
+ rake db:migrate
 
-type rake db:seed
+ rake db:seed
 
-type rails s
+ rails s
 
-type cd client
+ cd client
 
-type npm install
+ npm install
 
-type npm start
+ npm start
+```
+Type "y" after being prompted in the terminal after typing npm start
 
 and Music Rater will open in your browser!
 
