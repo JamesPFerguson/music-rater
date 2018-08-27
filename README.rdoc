@@ -1,28 +1,29 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#Installation & Usage  
 
-Things you may want to cover:
+To install and run this program, 
 
-* Ruby version
+clone the git respository
 
-* System dependencies
+type cd music-tracker
 
-* Configuration
+type bundle install
 
-* Database creation
+type rake db:migrate
 
-* Database initialization
+type rake db:seed
 
-* How to run the test suite
+type rails s
 
-* Services (job queues, cache servers, search engines, etc.)
+type cd client
 
-* Deployment instructions
+type npm install
 
-* ...
+type npm start
+
+and Music Rater will open in your browser!
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+
+
