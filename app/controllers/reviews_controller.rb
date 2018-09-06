@@ -5,8 +5,10 @@ class ReviewsController < ApplicationController
     # returns a JSON review
     user = User.create(username: params[:username])
     artist = Artist.find_or_create_by(name: params[:artist_name])
+    artist.page_views ? nil : artist.page_views = 0
     album = Album.create(title: params[:album], art_url: params[:art_url],
        artist_name: params[:artist_name])
+    album.page_views ? nil : artist.page_views = 0
     artist.albums << album
     @review = Review.create(rating: params[:rating], content: params[:content], user_id: user.id)
     album.reviews << @review
