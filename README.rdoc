@@ -7,8 +7,7 @@ To install and run this program,
 clone the git repository
 
 type
-
- ```cd music-tracker
+```cd music-tracker
 
  bundle install
 
@@ -22,7 +21,9 @@ type
 
  npm install
 
- npm start```
+ npm start
+```
+Type "y" after being prompted in the terminal after typing npm start
 
 and Music Rater will open in your browser!
 
