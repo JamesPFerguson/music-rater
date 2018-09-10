@@ -25,6 +25,7 @@ class ArtistAlbumsContainer extends React.Component {
                 <div className="albumReviewsContainer">
                 <h1><Artist name={this.props.artist_albums.artist_albums.name} /></h1>
                 <Albums albums={this.props.artist_albums.artist_albums} />
+                <div><strong>Artist Views: {this.props.artist_albums.artist_albums.page_views}</strong></div>
                 </div>
             )
     }
