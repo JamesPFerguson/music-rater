@@ -30,7 +30,7 @@ class AlbumReviewsContainer extends React.Component {
                     <div className="col-4">
                         <Album album={album} />
                         <br/>
-                       <div> {album.page_views} </div>
+                       <div><strong> Album Views: {album.page_views} </strong></div>
                     </div>
                     <div className="col-7">
                         <AlbumReviews album_reviews={this.props.album_reviews.album_reviews} />
