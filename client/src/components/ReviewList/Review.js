@@ -31,7 +31,7 @@ export default class Review extends React.Component {
         <div className="col-8">
           <AlbumReview user={this.props.user} rating={this.props.rating} content={this.props.content} />
         </div>
-        <button onClick={this.handleClick}>Click Me</button> <span>{this.state.votes}</span>
+        {/* <button onClick={this.handleClick}>Click Me</button> <span>{this.state.votes}</span> */}
       </div>
     )
    }
