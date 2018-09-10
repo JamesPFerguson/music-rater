@@ -16,6 +16,7 @@ class AlbumsController < ApplicationController
     #renders only an album
     album = Album.find(params[:id])
     album.page_views += 1
+    album.save
     reviews = album.reviews
     render json: reviews
   end

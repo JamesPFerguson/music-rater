@@ -9,16 +9,16 @@
 bob = User.create(username:"Bob")
 tom = User.create(username:"Tom")
 
-plini = Artist.create(name: "Plini")
-ff = Artist.create(name: "Fleet Foxes")
+plini = Artist.create(name: "Plini", page_views: 0)
+ff = Artist.create(name: "Fleet Foxes", page_views: 0)
 
 hmc = Album.create(title: "Handmade Cities", art_url:"https://f4.bcbits.com/img/a2040672325_10.jpg",
-  artist_id: plini.id, artist_name: plini.name)
+  artist_id: plini.id, artist_name: plini.name, page_views: 0)
 ot = Album.create(title: "Other Things", art_url:"https://f4.bcbits.com/img/a0873143341_10.jpg",
-    artist_id: plini.id, artist_name: plini.name)
+    artist_id: plini.id, artist_name: plini.name, page_views: 0)
 hb = Album.create(title: "Helplessness Blues",
   art_url:"https://images-na.ssl-images-amazon.com/images/I/81z4V17odOL._SL1220_.jpg",
-  artist_id: ff.id, artist_name: ff.name)
+  artist_id: ff.id, artist_name: ff.name, page_views: 0)
 
 review1 = Review.create(album_id: hmc.id, user_id: bob.id, rating: 4,
   content: "This album was great. Handmade Cities was a thoughtful prog album that I enjoyed having on both in the background or for more active listening." +

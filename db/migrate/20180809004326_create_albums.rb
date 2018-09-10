@@ -5,6 +5,7 @@ class CreateAlbums < ActiveRecord::Migration[4.2]
       t.string :artist_name
       t.string :title
       t.string :art_url
+      t.integer :page_views
       t.timestamps null: false
     end
   end
