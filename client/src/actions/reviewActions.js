@@ -9,7 +9,6 @@ export function fetchReviews() {
 }
 
 export function addReview(reviewData) {
-    console.log('C')
     return (dispatch) => {
         return fetch('http://localhost:3000/reviews', {
             method: "POST",
@@ -20,9 +19,7 @@ export function addReview(reviewData) {
         })
             .then(res => res.json())
             .then(response => {
-                console.log('D')
                 dispatch({type: 'ADD_REVIEW', review: response})
             })
     }
-    console.log('E')
 }
