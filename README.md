@@ -20,7 +20,7 @@ cd music-tracker
  open another terminal
 
 ``` 
-cd to the client directory within the project (cd client)
+cd client #cd to the client directory within the project 
 
  npm install
 
