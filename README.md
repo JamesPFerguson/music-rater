@@ -12,7 +12,7 @@ cd music-tracker
 
  rake db:seed
 
- rails s```
+ rails s ```
 
  open another terminal
 
@@ -20,7 +20,7 @@ cd music-tracker
 
  npm install
 
- npm start```
+ npm start ```
 
 Type "y" after being prompted in the terminal after typing npm start
 
