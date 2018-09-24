@@ -1,11 +1,9 @@
-== README
-
 #Installation & Usage  
 
 
 To install and run this program:
 
-git clone https://github.com/JamesPFerguson/music-rater.git
+```git clone https://github.com/JamesPFerguson/music-rater.git
 
 cd music-tracker
  bundle install
@@ -14,15 +12,15 @@ cd music-tracker
 
  rake db:seed
 
- rails s
+ rails s```
 
  open another terminal
 
- cd to the client directory within the project
+``` cd to the client directory within the project
 
  npm install
 
- npm start
+ npm start```
 
 Type "y" after being prompted in the terminal after typing npm start
 
