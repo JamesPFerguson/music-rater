@@ -3,7 +3,27 @@
 #Installation & Usage  
 
 
+To install and run this program:
 
-test
+```
+git clone https://github.com/JamesPFerguson/music-rater.git
 
+cd music-tracker
 
+ bundle install
+
+ rake db:migrate
+
+ rake db:seed
+
+ rails s
+
+ cd client
+
+ npm install
+
+ npm start
+```
+Type "y" after being prompted in the terminal after typing npm start
+
+and Music Rater will open in your browser!
