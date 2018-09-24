@@ -5,8 +5,7 @@
 
 To install and run this program:
 
-```
-git clone https://github.com/JamesPFerguson/music-rater.git
++git clone https://github.com/JamesPFerguson/music-rater.git
 
 cd music-tracker
 
@@ -16,14 +15,18 @@ cd music-tracker
 
  rake db:seed
 
- rails s
+ rails s+
 
- cd client
+ open another terminal
 
- npm install
+ 
 
- npm start
-```
+ cd to the client directory within the project
+
+ +npm install
+
+ npm start+
+
 Type "y" after being prompted in the terminal after typing npm start
 
 and Music Rater will open in your browser!
