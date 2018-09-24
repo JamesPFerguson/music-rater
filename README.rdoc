@@ -25,7 +25,7 @@ type
 ```
 Type "y" after being prompted in the terminal after typing npm start
 
-and Music Rater will open in your browser!
+and Music Rater will open in your browser! 
 
 
 
