@@ -8,13 +8,13 @@ git clone https://github.com/JamesPFerguson/music-rater.git
 
 cd music-tracker
 
- bundle install
+bundle install
 
- rake db:migrate
+rake db:migrate
 
- rake db:seed
+rake db:seed
 
- rails s
+rails s
  ```
 
  open another terminal
@@ -22,9 +22,9 @@ cd music-tracker
 ``` 
 cd client #cd to the client directory within the project 
 
- npm install
+npm install
 
- npm start 
+npm start 
  ```
 
 Type "y" after being prompted in the terminal after typing npm start
