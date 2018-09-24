@@ -7,6 +7,7 @@ To install and run this program:
 git clone https://github.com/JamesPFerguson/music-rater.git
 
 cd music-tracker
+
  bundle install
 
  rake db:migrate
@@ -19,7 +20,7 @@ cd music-tracker
  open another terminal
 
 ``` 
-cd to the client directory within the project
+cd to the client directory within the project (cd client)
 
  npm install
 
